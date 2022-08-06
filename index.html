@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR-code-Design</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 1440px;
+        height: 130vh;
+      }
+      .page-layout {
+        height: 130vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsla(42, 23%, 83%, 0.26);
+      }
+      .qr-page {
+        width: 70%;
+        height: 80%;
+        display: flex;
+        background-color: hsl(212, 45%, 89%);
+        justify-content: center;
+        align-items: center;
+      }
+      .qr-container {
+        display: flex;
+        width: 280px;
+        flex-direction: column;
+        padding: 16px;
+        border-radius: 12px;
+        background-color: hsl(0, 0%, 100%);
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 16px 12px 12px hsl(221, 36%, 86%);
+      }
+      .qr-img {
+        width: 250px;
+        height: auto;
+        border-radius: 12px;
+        margin-bottom: 32px;
+      }
+      .qr-call-to-action {
+        margin-bottom: 20px;
+        font-weight: 700;
+        color: hsl(218, 44%, 22%);
+        line-height: 1.05;
+        font-family: sans-serif;
+        padding: 0 18px;
+        display: flex;
+        text-align: center;
+        align-items: flex-end;
+      }
+
+      .qr-text {
+        display: flex;
+        align-items: flex-start;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: sans-serif;
+        color: hsl(220, 15%, 55%);
+        padding: 0 18px;
+        text-align: center;
+        margin-bottom: 28px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="page-layout">
+      <div class="qr-page">
+        <div class="qr-container">
+          <img src="images/image-qr-code.png" class="qr-img" />
+          <h4 class="qr-call-to-action">
+            Improve your front-end skills by building projects.
+          </h4>
+          <p class="qr-text">
+            Scan the QR code to visit Frontend Mentor and take your coding
+            skills to the next level
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
